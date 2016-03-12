@@ -1,11 +1,18 @@
+/// <reference path="../../typings/main.d.ts" />
 'use strict';
 
 /* jasmine specs for controllers go here */
 
-describe('controllers', function() {
+describe('PhoneListCtrl', function() {
 
-  it("should do something", function() {
+  beforeEach(module('phonecatApp'));
 
-  });
+  it('should create "phone" model with 3 phones', inject(function($controller) {
+      var scope = {}, ctrl = $controller('PhoneListCtrl', {$scope:scope});
+      expect(scope.name).toBe('World');
+      expect(scope.phones.length).toBe(3);
+  })
+  );
+  
 
 });

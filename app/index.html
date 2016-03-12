@@ -1,15 +1,28 @@
 <!doctype html>
-<html lang="en" ng-app>
+<!-- Angular should consider to be the root element of our application. Indicate if the entire html page/ portion is Angular application -->
+<!-- Angular module name - phonecatApp, which contains the PhoneListCtrl -->
+<html lang="en" ng-app="phonecatApp">
 <head>
   <meta charset="utf-8">
   <title>My HTML File</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"/>
 </head>
-<body>
+<body ng-controller="PhoneListCtrl">
+    <p>Hello, {{name}}!</p>
 
-  <p>Nothing here {{'yet' + '!'}}</p>
+    <!--add mobile here-->
+    <ul>
+        <!-- for Angular repeateer directive-->
+        <li ng-repeat="phone in phones">
+            <span>{{phone.name}}</span>
+            <p>{{phone.snippet}}</p>
+        </li>
+    </ul>
+    
+    <p>Total number of phones: {{phones.length}}</p>
 
 </body>
 </html>
