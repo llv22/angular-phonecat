@@ -1,3 +1,4 @@
+/// <reference path="../../typings/main.d.ts" />
 var phonecatAnimations = angular.module('phonecatAnimations', ['ngAnimate']);
 
 phonecatAnimations.animation('.phone', function() {
