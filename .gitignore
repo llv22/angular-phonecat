@@ -10,3 +10,4 @@ bower_components/
 # typings
 typings.json
 typings/
+npm-debug.log

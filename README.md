@@ -23,9 +23,9 @@ The full tutorial can be found at http://docs.angularjs.org/tutorial.
 - Install the tool dependencies (`npm install`).
 
 ### Add typings support in Visual Code
-- typing to add library
-    $ typings init
-    $ typings install angular angular-mocks jquery bootstrap angular-route angular-resource angular-animate --ambient --save
+- typing to add library  
+    $ typings init  
+    $ typings install angular angular-mocks jquery bootstrap angular-route angular-resource angular-animate --ambient --save  
 
 ## Workings of the application
 
