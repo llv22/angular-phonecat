@@ -245,7 +245,11 @@ Requires a webserver that serves the application. See Running the app during dev
         controllersSpec.js --> specs for controllers
         directivesSpec.js  --> specs for directives
         filtersSpec.js     --> specs for filters
-        servicesSpec.js    --> specs for services
+        servicesSpec.js    --> specs for services  
+        
+## Solution issue list  
+1, permission issue for '$npm install'  
+/Users/llv22/.cache/bower has different permission since last update or npm install in user cache  
 
 ## Contact
 
