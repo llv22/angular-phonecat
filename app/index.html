@@ -4,23 +4,35 @@
 <html lang="en" ng-app="phonecatApp">
 <head>
   <meta charset="utf-8">
-  <title>My HTML File</title>
+  <!-- binding with {{query}}, so ng-controller must be moved to html level -->
+  <!--<title>Google Phone Gallery: {{query}}</title>-->
+  <title>Google Phone Gallery</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/controllers.js"/>
 </head>
-<body ng-controller="PhoneListCtrl">
+<body  ng-controller="PhoneListCtrl">
     <p>Hello, {{name}}!</p>
 
-    <!--add mobile here-->
-    <ul>
-        <!-- for Angular repeateer directive-->
-        <li ng-repeat="phone in phones">
-            <span>{{phone.name}}</span>
-            <p>{{phone.snippet}}</p>
-        </li>
-    </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Slidebar content -->
+                Search: <input ng-model="query">
+            </div>
+            <div class="col-md-10">
+                <!-- Body content -->
+                <ul class="phones">
+                    <!-- for Angular repeateer directive-->
+                    <li ng-repeat="phone in phones | filter: query">
+                        <span>{{phone.name}}</span>
+                        <p>{{phone.snippet}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     
     <p>Total number of phones: {{phones.length}}</p>
 
