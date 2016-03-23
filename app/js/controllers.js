@@ -3,10 +3,10 @@
 
 /* Controllers */
 
-var phonecatApp = angular.module('phonecatApp', [])
+var phonecatApp = angular.module('phonecatApp', []);
 
-phonecatApp.controller('PhoneListCtrl', function ($scope) {
-   $scope.name = 'World';
+phonecatApp.controller('PhoneListCtrl', function($scope){
+//    $scope.name = 'World';
    $scope.phones = [
        {
            'name': 'Nexus S', 

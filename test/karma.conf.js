@@ -15,8 +15,8 @@ module.exports = function(config){
 
     frameworks: ['jasmine'],
 
-    // Currently I only use Chrome for testing
-    browsers : ['Chrome'],
+    // Currently I only use Chrome for testing, reference inhttp://stackoverflow.com/questions/19255976/how-to-make-travis-execute-angular-tests-on-chrome-please-set-env-variable-chr
+    browsers : ['Chrome', 'ChromeCanary'],
     // browsers : ['Chrome', 'Firefox'],
 
     plugins : [
@@ -32,3 +32,4 @@ module.exports = function(config){
 
   });
 };
+
