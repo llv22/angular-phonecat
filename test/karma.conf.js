@@ -13,7 +13,7 @@ module.exports = function(config){
 
     autoWatch : true,
 
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine2'],
 
     // Currently I only use Chrome for testing, reference inhttp://stackoverflow.com/questions/19255976/how-to-make-travis-execute-angular-tests-on-chrome-please-set-env-variable-chr
     browsers : ['Chrome', 'ChromeCanary'],

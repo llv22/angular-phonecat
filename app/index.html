@@ -1,19 +1,19 @@
 <!doctype html>
 <!-- Angular should consider to be the root element of our application. Indicate if the entire html page/ portion is Angular application -->
 <!-- Angular module name - phonecatApp, which contains the PhoneListCtrl -->
-<html lang="en" ng-app="phonecatApp">
+<html lang="en" ng-app="phonecatApp"  ng-controller="PhoneListCtrl">
 <head>
   <meta charset="utf-8">
   <!-- binding with {{query}}, so ng-controller must be moved to html level -->
-  <!--<title>Google Phone Gallery: {{query}}</title>-->
-  <title>Google Phone Gallery</title>
+  <title>Google Phone Gallery: {{query}}</title>
+  <!--<title>Google Phone Gallery</title>-->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <!-- script of angular.js should be ended with </script> -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/controllers.js"></script>
 </head>
-<body  ng-controller="PhoneListCtrl">
+<body>
     <!--<p>Hello, {{name}}!</p>-->
 
     <div class="container-fluid">
@@ -26,8 +26,9 @@
                 <!-- Body content -->
                 <ul class="phones">
                     <!-- for Angular repeateer directive-->
-                    <li ng-repeat="phone in phones | filter: query">
-                        <span>{{phone.name}}</span>
+                    <li ng-repeat="phone in phones | filter:query">
+                        <!--<span>{{phone.name}}</span>-->
+                        {{phone.name}}
                         <p>{{phone.snippet}}</p>
                     </li>
                 </ul>
