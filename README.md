@@ -10,7 +10,10 @@ Each tagged commit is a separate lesson teaching a single aspect of angular.
 
 The full tutorial can be found at http://docs.angularjs.org/tutorial.
 
-## Prerequisites
+### Angular framework
+- [Google Phone Gallery on WayBack](https://lostechies.com/gabrielschenker/2013/12/05/angularjspart-1/)    
+
+## Prerequisites   
 
 ### Git
 

@@ -13,7 +13,8 @@
  */
 exports.config = {
   allScriptsTimeout: 11000,
-  troubleshoot: true,
+  
+//   troubleshoot: true,
 
   specs: [
     'e2e/*.js'
